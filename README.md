@@ -1,2 +1,18 @@
 # Python-Codes
 This is my 1st Git Repository 
+from textblob import TextBlob
+texts = [ "I love this product! It's amazing 😍",
+    "This is the worst thing I ever bought 😡",
+    "It's okay, not too bad but not great either."]
+
+for t in texts:
+    blob = TextBlob(t)
+    sentiment = blob.sentiment.polarity  
+    if sentiment > 0:
+        label = "Positive 😀"
+    elif sentiment < 0:
+        label = "Negative 😠"
+    else:
+        label = "Neutral 😐"
+
+    print(f"Text: {t}\nSentiment: {label}\n")
