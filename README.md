@@ -1,5 +1,6 @@
 # Python-Codes
-This is my 1st Git Repository 
+AI-based sentiment analyzer
+<br>
 from textblob import TextBlob
 texts = [ "I love this product! It's amazing 😍",
     "This is the worst thing I ever bought 😡",
